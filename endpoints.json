@@ -1,0 +1,7 @@
+{
+  "base_url": "",
+  "methods": {
+    "seasons": { "resource": "seasons" },
+    "season leaderboard": { "resource": "seasons/:id" }
+  }
+}
