@@ -1,7 +1,11 @@
 {
-  "base_url": "",
+  "base_url": "https://us.api.battle.net",
   "methods": {
-    "seasons": { "resource": "seasons" },
-    "season leaderboard": { "resource": "seasons/:id" }
+    "seasons": { "resource": "data/d3/season" },
+    "season": { "resource": "data/d3/season/:id" },
+    "season leaderboard": { "resource": "data/d3/season/:id/leaderboard/:leaderboard" },
+    "eras": { "resource": "data/d3/era" },
+    "era": { "resource": "data/d3/era/:id" },
+    "era leaderboard": { "resource": "data/d3/era/:id/leaderboard/:leaderboard" }
   }
 }
