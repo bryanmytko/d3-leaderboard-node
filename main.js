@@ -5,7 +5,9 @@ var CustomError = require('./custom-error');
 var Endpoints = require('./endpoints');
 
 module.exports = function D3(api_key, locale){
-  this.api_key = api_key; //|| throw new CustomError('No API key set!', 1);
+  if(api_key) this.api_key = api_key;
+  else throw new CustomError('No API key set!');
+
   this.locale = locale || "enUS";
 
   return this;
