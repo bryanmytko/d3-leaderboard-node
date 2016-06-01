@@ -18,5 +18,12 @@ describe("D3", function(){
       expect(client).to.be.an.instanceof(D3);
     });
   });
+
+  describe("when instantiated without an API key", function(){
+    it("throw API key error", function(){
+      var fn = function(){ new D3(); }
+      expect(fn).to.throw('CustomError', 'No API key set!');
+    });
+  });
 });
 
