@@ -30,7 +30,14 @@ function api_method(endpoint, params){
   var params = params || {};
   params.locale = this.locale;
 
-  console.log(params);
+  var endpoint = endpoint.replace(':id', params.id)
+
+  unirest.get(Endpoints.base_url + endpoint)
+    .header('X-Mashape-Key', this.api_key)
+    .query(params)
+    .end(function(response){
+      console.log(response);
+    });
 }
 
 module.exports = D3;
