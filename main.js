@@ -1,5 +1,4 @@
 var unirest = require('unirest');
-var merge = require('merge');
 
 var CustomError = require('./custom-error');
 var Endpoints = require('./endpoints');
@@ -19,12 +18,18 @@ Object.keys(Endpoints.methods).forEach(function(m){
 
   D3.prototype[method_name] = function(params){
     var self = this;
-    api.call(self, method.resource, params);
+    api_method.call(self, method.resource, params);
   }
 });
 
-function api(endpoint, params){
-  console.log(endpoint);
+function api_method(endpoint, params){
+  console.log('endpoint:' + endpoint);
+  console.log('params:' + params);
+
+
+  var params = params || {};
+  params.locale = this.locale;
+
   console.log(params);
 }
 
