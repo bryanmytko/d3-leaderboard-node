@@ -34,10 +34,21 @@ describe('D3', function(){
   });
 
   describe('when instantiated without an API key', function(){
-    it('throw API key error', function(){
+    it('throws API key error', function(){
       var fn = function(){ new D3(); }
       expect(fn).to.throw('CustomError', 'No API key set!');
     });
   });
-});
 
+  describe('single season endpoint', function(){
+    it('returns season data', function(done){
+      var client = new D3(api_key);
+      var params = { id: 6 };
+
+      client.season(params, function(err, body){
+        expect(body).to.not.be.undefined;
+        done();
+      });
+    });
+  });
+});
