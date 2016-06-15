@@ -16,27 +16,28 @@ Object.keys(Endpoints.methods).forEach(function(m){
   var method_name = m.replace(" ","-");
   var method = Endpoints.methods[m];
 
-  D3.prototype[method_name] = function(params){
+  D3.prototype[method_name] = function(params, callback){
     var self = this;
-    api_method.call(self, method.resource, params);
+    api_method.call(self, method.resource, params, callback);
   }
 });
 
-function api_method(endpoint, params){
-  console.log('endpoint:' + endpoint);
-  console.log('params:' + params);
-
-
+function api_method(endpoint, params, callback){
   var params = params || {};
   params.locale = this.locale;
+  params.access_token = 'cn8fwfkjepzsr9hkda4n3m95';
 
+  // @TODO replace all possible params
   var endpoint = endpoint.replace(':id', params.id)
 
-  unirest.get(Endpoints.base_url + endpoint)
-    .header('X-Mashape-Key', this.api_key)
+  unirest.get(Endpoints.base_url + "/" + endpoint)
     .query(params)
     .end(function(response){
-      console.log(response);
+      if(response.ok){
+        callback(null, response.body);
+      } else {
+        callback(response.error, null);
+      }
     });
 }
 
