@@ -3,9 +3,9 @@ var unirest = require('unirest');
 var CustomError = require('./custom-error');
 var Endpoints = require('./endpoints');
 
-var D3 = function (api_key, locale){
-  if(api_key) this.api_key = api_key;
-  else throw new CustomError('No API key set!');
+var D3 = function (access_token, locale){
+  if(access_token) this.access_token = access_token;
+  else throw new CustomError('No Access Token set!');
 
   this.locale = locale || "enUS";
 
@@ -25,7 +25,7 @@ Object.keys(Endpoints.methods).forEach(function(m){
 function api_method(endpoint, params, callback){
   var params = params || {};
   params.locale = this.locale;
-  params.access_token = 'cn8fwfkjepzsr9hkda4n3m95';
+  params.access_token = this.access_token;
 
   // @TODO replace all possible params
   var endpoint = endpoint.replace(':id', params.id)
@@ -34,6 +34,7 @@ function api_method(endpoint, params, callback){
     .query(params)
     .end(function(response){
       if(response.ok){
+        console.log('ok');
         callback(null, response.body);
       } else {
         callback(response.error, null);
