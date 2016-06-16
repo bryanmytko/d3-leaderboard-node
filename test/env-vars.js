@@ -1,3 +1,3 @@
 module.exports = {
-  'BLIZZARD_API_KEY': 'XXXXXXXXXXXX'
+  'BLIZZARD_ACCESS_TOKEN': 'avkx7h22xxm8d7hyqnjga'
 };
