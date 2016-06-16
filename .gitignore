@@ -2,6 +2,6 @@
 *.swo
 
 .env
-.env-vars.js
+test/.env-vars.js
 
 .DS_Store
