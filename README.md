@@ -1,5 +1,4 @@
 # D3 Leaderboard API Wrapper
-[http://bryanmytko.com](http://bryanmytko.com)
 
 ## Requirements
 
@@ -8,6 +7,7 @@ Get an Access Token from Blizzard [https://dev.battle.net/io-docs](https://dev.b
 ## Usage
 
 Setup:
+
     var access_token = 'xxxxxxxxxxxxxxxxxxxxx';
     var locale = 'enUS';
 
