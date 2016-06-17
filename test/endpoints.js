@@ -13,7 +13,7 @@ var D3 = require('../main.js'),
 describe('D3 Endpoints', function(){
   describe('/seasons/', function(){
     it('returns data', function(done){
-      client.seasons({}, function(error, response){
+      client.seasons(function(error, response){
         expect(error).to.be.null;
         expect(response).to.not.be.undefined;
         done();
