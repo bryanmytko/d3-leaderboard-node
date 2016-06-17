@@ -31,6 +31,7 @@ This method takes no arguments and a callback function.
 ## Developers
 
 Tests require an env-vars.js file in **/test** directory with access token field:
+
     module.exports = {
       'BLIZZARD_ACCESS_TOKEN': 'xxxxxxxxxxxxxxxxxxxxxxx'
     };
@@ -39,8 +40,8 @@ Run with `mocha` or `mocha debug test/ -R spec`
 
 ## Contributing
 
-Fork it ( https://github.com/[my-github-username]/d3-leaderboard-node/fork )
-Create your feature branch (git checkout -b my-new-feature)
-Commit your changes (git commit -am 'Add some feature')
-Push to the branch (git push origin my-new-feature)
-Create a new Pull Request
+1. Fork it ( https://github.com/[my-github-username]/d3-leaderboard-node/fork )
+1. Create your feature branch (git checkout -b my-new-feature)
+1. Commit your changes (git commit -am 'Add some feature')
+1. Push to the branch (git push origin my-new-feature)
+1. Create a new Pull Request
