@@ -26,15 +26,17 @@ function api_method(endpoint, params, callback){
   var params = params || {};
   params.locale = this.locale;
   params.access_token = this.access_token;
+  console.log(params);
 
-  // @TODO replace all possible params
-  var endpoint = endpoint.replace(':id', params.id)
+  var endpoint = endpoint
+    .replace(':id', params.id)
+    .replace(':leaderboard', params.leaderboard)
 
   unirest.get(Endpoints.base_url + "/" + endpoint)
     .query(params)
+    .encoding('UTF-8')
     .end(function(response){
       if(response.ok){
-        console.log('ok');
         callback(null, response.body);
       } else {
         callback(response.error, null);
