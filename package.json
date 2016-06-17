@@ -1,5 +1,5 @@
 {
-  "name": "d3-leaderboard-node-api",
+  "name": "d3-leaderboard",
   "version": "1.0.0",
   "description": "An API wrapper for the D3 leaderboard endpoints",
   "main": "main.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bryanmytko/d3-leaderboard-node-api.git"
+    "url": "git+https://github.com/bryanmytko/d3-leaderboard-node.git"
   },
   "author": "Bryan Mytko",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bryanmytko/d3-leaderboard-node-api/issues"
+    "url": "https://github.com/bryanmytko/d3-leaderboard-node/issues"
   },
-  "homepage": "https://github.com/bryanmytko/d3-leaderboard-node-api#readme",
+  "homepage": "https://github.com/bryanmytko/d3-leaderboard-node#readme",
   "devDependencies": {
     "chai": "^3.5.0",
     "sinon": "^1.17.4",
