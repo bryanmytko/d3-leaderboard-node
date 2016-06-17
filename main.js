@@ -16,9 +16,17 @@ Object.keys(Endpoints.methods).forEach(function(m){
   var method_name = m.replace(" ","-");
   var method = Endpoints.methods[m];
 
-  D3.prototype[method_name] = function(params, callback){
+  D3.prototype[method_name] = function(arg1, arg2){
     var self = this;
-    api_method.call(self, method.resource, params, callback);
+
+    switch(arguments.length){
+      case 1:
+        api_method.call(self, method.resource, null, arg1);
+        break;
+      case 2:
+        api_method.call(self, method.resource, arg1, arg2);
+        break;
+    }
   }
 });
 
