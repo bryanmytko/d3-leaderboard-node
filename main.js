@@ -26,7 +26,6 @@ function api_method(endpoint, params, callback){
   var params = params || {};
   params.locale = this.locale;
   params.access_token = this.access_token;
-  console.log(params);
 
   var endpoint = endpoint
     .replace(':id', params.id)
