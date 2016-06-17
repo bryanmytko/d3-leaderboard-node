@@ -14,7 +14,7 @@ Setup:
     var D3 = require('d3-leaderboard');
     client = new D3(access_token, locale);
 
-__locale is optional; defaults to enUS__
+_locale is optional; defaults to enUS_
 
 #### /seasons
 
