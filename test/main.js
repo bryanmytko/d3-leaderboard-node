@@ -39,18 +39,4 @@ describe('D3', function(){
       expect(fn).to.throw('CustomError', 'No Access Token set!');
     });
   });
-
-  describe('single season endpoint', function(){
-    it('returns season data', function(done){
-      // @TODO always returns 401?
-      // var client = new D3('avkx7h22xxm8d7hyqnjga');
-      // var params = { id: '5' };
-      //
-      // client.season({id: 5}, function(err, body){
-      //   expect(err).to.be.null;
-      //   expect(body).to.not.be.null;
-      //   done();
-      // });
-    });
-  });
 });
