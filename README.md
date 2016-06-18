@@ -22,11 +22,23 @@ This method takes no arguments and a callback function.
 
     client.seasons(function(error, body){});
 
-#### /seasons/:id
+#### /season/:id
 
 **id** (required) - The season you are looking to return
 
     client.season({ id: 5 }, function(error, body){});
+
+#### /eras
+
+This method takes no arguments and a callback function.
+
+    client.eras(function(error, body){});
+
+#### /era/:id
+
+**id** (required) - The era you are looking to return
+
+    client.era({ id: 5 }, function(error, body){});
 
 ## Developers
 
