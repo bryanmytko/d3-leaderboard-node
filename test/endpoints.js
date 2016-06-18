@@ -32,10 +32,17 @@ describe('D3 Endpoints', function(){
   });
 
   describe('/era', function(){
-    it('returns era data', function(done){
+    it('returns eras data', function(done){
       client.eras(function(error, response){
-        expect(error).to.be.null;
-        expect(response).to.not.be.undefined;
+        expect(response.era).to.not.be.empty;
+      });
+    });
+  });
+
+  describe('/era/:id', function(){
+    it('returns era data', function(done){
+      client.era({ id: 4 }, function(error, response){
+        expect(response.era_id).to.equal(4);
         done();
       });
     });
