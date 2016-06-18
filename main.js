@@ -37,6 +37,7 @@ function api_method(endpoint, params, callback){
 
   var endpoint = endpoint
     .replace(':id', params.id)
+    // Need to add nested /leaderboard/:leaderboard. Will that work?
     .replace(':leaderboard', params.leaderboard)
 
   unirest.get(Endpoints.base_url + "/" + endpoint)

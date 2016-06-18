@@ -50,4 +50,6 @@ describe('D3 Endpoints', function(){
   // @TODO
   // season/:id/leaderboard/:leaderboard
   // era/:id/leaderboard/:leaderboard
+  // E.g., 
+  // client.era({ id: 4, leaderboard: 'achievement-points' }, function(){})
 });
