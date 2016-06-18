@@ -14,8 +14,7 @@ describe('D3 Endpoints', function(){
   describe('/seasons/', function(){
     it('returns seasons data', function(done){
       client.seasons(function(error, response){
-        expect(error).to.be.null;
-        expect(response).to.not.be.undefined;
+        expect(response.season).to.not.be.empty;
         done();
       });
     });
@@ -23,9 +22,8 @@ describe('D3 Endpoints', function(){
 
   describe('/seasons/:id', function(){
     it('returns season data', function(done){
-      client.seasons({ id: 5 }, function(error, response){
-        expect(error).to.be.null;
-        expect(response).to.not.be.undefined;
+      client.season({ id: 5 }, function(error, response){
+        expect(response.season_id).to.equal(5);
         done();
       });
     });
@@ -35,6 +33,7 @@ describe('D3 Endpoints', function(){
     it('returns eras data', function(done){
       client.eras(function(error, response){
         expect(response.era).to.not.be.empty;
+        done();
       });
     });
   });
