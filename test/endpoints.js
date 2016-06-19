@@ -47,9 +47,22 @@ describe('D3 Endpoints', function(){
     });
   });
 
+  describe('/season/:id/leaderboard/:leaderboard', function(){
+    it('returns a season leaderboard', function(done){
+      client.season_leaderboard(
+        { id: 4, leaderboard: 'achievement-points' },
+        function(error, response){
+          done();
+          console.log(response);
+        }
+      );
+    });
+  });
+
   // @TODO
   // season/:id/leaderboard/:leaderboard
   // era/:id/leaderboard/:leaderboard
-  // E.g., 
+  //
+  // E.g.,
   // client.era({ id: 4, leaderboard: 'achievement-points' }, function(){})
 });
