@@ -13,7 +13,7 @@ var D3 = function (access_token, locale){
 }
 
 Object.keys(Endpoints.methods).forEach(function(m){
-  var method_name = m.replace(" ","-");
+  var method_name = m.replace(" ","_");
   var method = Endpoints.methods[m];
 
   D3.prototype[method_name] = function(arg1, arg2){
@@ -37,7 +37,6 @@ function api_method(endpoint, params, callback){
 
   var endpoint = endpoint
     .replace(':id', params.id)
-    // Need to add nested /leaderboard/:leaderboard. Will that work?
     .replace(':leaderboard', params.leaderboard)
 
   unirest.get(Endpoints.base_url + "/" + endpoint)
