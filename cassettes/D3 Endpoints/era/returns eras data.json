@@ -32,7 +32,7 @@
         }
       ],
       "current_era": 6,
-      "last_update_time": "Mon, 27 Jun 2016 04:07:00 UTC",
+      "last_update_time": "Mon, 27 Jun 2016 04:22:00 UTC",
       "generated_by": "US8-D3-PURPLE-JOB01 2.4.1 branches/2_4_1_Live-branches/2_4_1_Live"
     },
     "headers": {
@@ -41,17 +41,17 @@
       "battlenet-schema-revision": "1",
       "battlenet-scope": "public",
       "content-type": "application/json;charset=UTF-8",
-      "date": "Mon, 27 Jun 2016 04:07:03 GMT",
-      "last-modified": "Mon, 27 Jun 2016 04:07:00 GMT",
+      "date": "Mon, 27 Jun 2016 04:22:46 GMT",
+      "last-modified": "Mon, 27 Jun 2016 04:22:00 GMT",
       "retry-after": "600",
       "server": "Apache",
       "vary": "Accept-Encoding",
       "x-frame-options": "SAMEORIGIN",
-      "x-mashery-responder": "prod-j-worker-us-east-1b-115.mashery.com",
+      "x-mashery-responder": "prod-j-worker-us-east-1b-118.mashery.com",
       "x-plan-qps-allotted": "100",
       "x-plan-qps-current": "1",
       "x-plan-quota-allotted": "36000",
-      "x-plan-quota-current": "18",
+      "x-plan-quota-current": "28",
       "x-plan-quota-reset": "Monday, June 27, 2016 5:00:00 AM GMT",
       "content-length": "652",
       "connection": "Close"
