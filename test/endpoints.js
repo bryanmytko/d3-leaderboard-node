@@ -51,6 +51,8 @@ describe('D3 Endpoints', function(){
 
   describe('/season/:id/leaderboard/:leaderboard', function(){
     vcr.it('returns a season leaderboard', function(done){
+      this.timeout(5000);
+
       client.season_leaderboard(
         { id: 4, leaderboard: 'achievement-points' },
         function(error, response){
@@ -61,10 +63,17 @@ describe('D3 Endpoints', function(){
     });
   });
 
-  // @TODO
-  // season/:id/leaderboard/:leaderboard
-  // era/:id/leaderboard/:leaderboard
-  //
-  // E.g.,
-  // client.era({ id: 4, leaderboard: 'achievement-points' }, function(){})
+  describe('/era/:id/leaderboard/:leaderboard', function(){
+    vcr.it('returns an era leaderboard', function(done){
+      this.timeout(5000);
+
+      client.era_leaderboard(
+        { id: 4, leaderboard: 'rift-barbarian' },
+        function(error, response){
+          expect(response.title.en_US).to.equal('Barbarian Greater Rift');
+          done();
+        }
+      );
+    });
+  });
 });
