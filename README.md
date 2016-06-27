@@ -62,7 +62,7 @@ This method takes no arguments and a callback function.
 **leaderboard** (required) - The leaderboard type (these can be found in the era/:id response)
 
     client.era_leaderboard(
-      { id: 5, leaderboard: 'achievement-points' },
+      { id: 5, leaderboard: 'rift-barbarian' },
       function(error, body){
         // whatever
       }
