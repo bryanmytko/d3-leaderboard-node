@@ -1,0 +1,221 @@
+[
+  {
+    "scope": "https://us.api.battle.net:443",
+    "method": "get",
+    "path": "/data/d3/season/5?id=5&locale=enUS&access_token=prwu8zwezajytmspyuys52x7",
+    "body": "",
+    "status": 200,
+    "response": {
+      "_links": {
+        "self": {
+          "href": "https://us.api.battle.net/data/d3/season/5?namespace=2-1-US"
+        }
+      },
+      "leaderboard": [
+        {
+          "ladder": {
+            "href": "https://us.api.battle.net/data/d3/season/5/leaderboard/achievement-points?namespace=2-1-US"
+          }
+        },
+        {
+          "team_size": 1,
+          "ladder": {
+            "href": "https://us.api.battle.net/data/d3/season/5/leaderboard/rift-hardcore-barbarian?namespace=2-1-US"
+          },
+          "hardcore": true,
+          "hero_class_string": "barbarian"
+        },
+        {
+          "team_size": 1,
+          "ladder": {
+            "href": "https://us.api.battle.net/data/d3/season/5/leaderboard/rift-barbarian?namespace=2-1-US"
+          },
+          "hardcore": true,
+          "hero_class_string": "barbarian"
+        },
+        {
+          "team_size": 1,
+          "ladder": {
+            "href": "https://us.api.battle.net/data/d3/season/5/leaderboard/rift-hardcore-crusader?namespace=2-1-US"
+          },
+          "hero_class_string": "crusader"
+        },
+        {
+          "team_size": 1,
+          "ladder": {
+            "href": "https://us.api.battle.net/data/d3/season/5/leaderboard/rift-crusader?namespace=2-1-US"
+          },
+          "hero_class_string": "crusader"
+        },
+        {
+          "team_size": 1,
+          "ladder": {
+            "href": "https://us.api.battle.net/data/d3/season/5/leaderboard/rift-hardcore-dh?namespace=2-1-US"
+          },
+          "hardcore": true,
+          "hero_class_string": "dh"
+        },
+        {
+          "team_size": 1,
+          "ladder": {
+            "href": "https://us.api.battle.net/data/d3/season/5/leaderboard/rift-dh?namespace=2-1-US"
+          },
+          "hardcore": true,
+          "hero_class_string": "dh"
+        },
+        {
+          "team_size": 1,
+          "ladder": {
+            "href": "https://us.api.battle.net/data/d3/season/5/leaderboard/rift-hardcore-monk?namespace=2-1-US"
+          },
+          "hero_class_string": "monk"
+        },
+        {
+          "team_size": 1,
+          "ladder": {
+            "href": "https://us.api.battle.net/data/d3/season/5/leaderboard/rift-monk?namespace=2-1-US"
+          },
+          "hero_class_string": "monk"
+        },
+        {
+          "team_size": 1,
+          "ladder": {
+            "href": "https://us.api.battle.net/data/d3/season/5/leaderboard/rift-hardcore-wd?namespace=2-1-US"
+          },
+          "hero_class_string": "wd"
+        },
+        {
+          "team_size": 1,
+          "ladder": {
+            "href": "https://us.api.battle.net/data/d3/season/5/leaderboard/rift-wd?namespace=2-1-US"
+          },
+          "hero_class_string": "wd"
+        },
+        {
+          "team_size": 1,
+          "ladder": {
+            "href": "https://us.api.battle.net/data/d3/season/5/leaderboard/rift-hardcore-wizard?namespace=2-1-US"
+          },
+          "hero_class_string": "wizard"
+        },
+        {
+          "team_size": 1,
+          "ladder": {
+            "href": "https://us.api.battle.net/data/d3/season/5/leaderboard/rift-wizard?namespace=2-1-US"
+          },
+          "hero_class_string": "wizard"
+        },
+        {
+          "team_size": 2,
+          "ladder": {
+            "href": "https://us.api.battle.net/data/d3/season/5/leaderboard/rift-hardcore-team-2?namespace=2-1-US"
+          }
+        },
+        {
+          "team_size": 2,
+          "ladder": {
+            "href": "https://us.api.battle.net/data/d3/season/5/leaderboard/rift-team-2?namespace=2-1-US"
+          }
+        },
+        {
+          "team_size": 3,
+          "ladder": {
+            "href": "https://us.api.battle.net/data/d3/season/5/leaderboard/rift-hardcore-team-3?namespace=2-1-US"
+          }
+        },
+        {
+          "team_size": 3,
+          "ladder": {
+            "href": "https://us.api.battle.net/data/d3/season/5/leaderboard/rift-team-3?namespace=2-1-US"
+          }
+        },
+        {
+          "team_size": 4,
+          "ladder": {
+            "href": "https://us.api.battle.net/data/d3/season/5/leaderboard/rift-hardcore-team-4?namespace=2-1-US"
+          }
+        },
+        {
+          "team_size": 4,
+          "ladder": {
+            "href": "https://us.api.battle.net/data/d3/season/5/leaderboard/rift-team-4?namespace=2-1-US"
+          }
+        },
+        {
+          "ladder": {
+            "href": "https://us.api.battle.net/data/d3/season/5/leaderboard/74987246929277?namespace=2-1-US"
+          }
+        },
+        {
+          "ladder": {
+            "href": "https://us.api.battle.net/data/d3/season/5/leaderboard/74987248527082?namespace=2-1-US"
+          }
+        },
+        {
+          "ladder": {
+            "href": "https://us.api.battle.net/data/d3/season/5/leaderboard/74987249720292?namespace=2-1-US"
+          }
+        },
+        {
+          "ladder": {
+            "href": "https://us.api.battle.net/data/d3/season/5/leaderboard/74987250346969?namespace=2-1-US"
+          }
+        },
+        {
+          "ladder": {
+            "href": "https://us.api.battle.net/data/d3/season/5/leaderboard/74987252216380?namespace=2-1-US"
+          }
+        },
+        {
+          "ladder": {
+            "href": "https://us.api.battle.net/data/d3/season/5/leaderboard/74987253109310?namespace=2-1-US"
+          }
+        },
+        {
+          "ladder": {
+            "href": "https://us.api.battle.net/data/d3/season/5/leaderboard/74987253750079?namespace=2-1-US"
+          }
+        },
+        {
+          "ladder": {
+            "href": "https://us.api.battle.net/data/d3/season/5/leaderboard/74987254029567?namespace=2-1-US"
+          }
+        },
+        {
+          "ladder": {
+            "href": "https://us.api.battle.net/data/d3/season/5/leaderboard/74987258201285?namespace=2-1-US"
+          }
+        },
+        {
+          "ladder": {
+            "href": "https://us.api.battle.net/data/d3/season/5/leaderboard/74987259617458?namespace=2-1-US"
+          }
+        }
+      ],
+      "season_id": 5,
+      "last_update_time": "Mon, 27 Jun 2016 04:07:00 UTC",
+      "generated_by": "US8-D3-PURPLE-JOB01 2.4.1 branches/2_4_1_Live-branches/2_4_1_Live"
+    },
+    "headers": {
+      "battlenet-namespace": "2-1-US",
+      "battlenet-schema": "season",
+      "battlenet-schema-revision": "2",
+      "battlenet-scope": "public",
+      "content-type": "application/json;charset=UTF-8",
+      "date": "Mon, 27 Jun 2016 04:07:03 GMT",
+      "last-modified": "Mon, 27 Jun 2016 04:07:00 GMT",
+      "retry-after": "600",
+      "server": "Apache",
+      "vary": "Accept-Encoding",
+      "x-frame-options": "SAMEORIGIN",
+      "x-mashery-responder": "prod-j-worker-us-east-1b-118.mashery.com",
+      "x-plan-qps-allotted": "100",
+      "x-plan-qps-current": "1",
+      "x-plan-quota-allotted": "36000",
+      "x-plan-quota-current": "17",
+      "x-plan-quota-reset": "Monday, June 27, 2016 5:00:00 AM GMT",
+      "content-length": "4090",
+      "connection": "Close"
+    }
+  }
+]

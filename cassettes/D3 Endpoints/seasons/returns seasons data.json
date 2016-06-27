@@ -1,0 +1,62 @@
+[
+  {
+    "scope": "https://us.api.battle.net:443",
+    "method": "get",
+    "path": "/data/d3/season/?locale=enUS&access_token=prwu8zwezajytmspyuys52x7",
+    "body": "",
+    "status": 200,
+    "response": {
+      "_links": {
+        "self": {
+          "href": "https://us.api.battle.net/data/d3/season/?namespace=2-1-US"
+        }
+      },
+      "season": [
+        {
+          "href": "https://us.api.battle.net/data/d3/season/1?namespace=2-1-US"
+        },
+        {
+          "href": "https://us.api.battle.net/data/d3/season/2?namespace=2-1-US"
+        },
+        {
+          "href": "https://us.api.battle.net/data/d3/season/3?namespace=2-1-US"
+        },
+        {
+          "href": "https://us.api.battle.net/data/d3/season/4?namespace=2-1-US"
+        },
+        {
+          "href": "https://us.api.battle.net/data/d3/season/5?namespace=2-1-US"
+        },
+        {
+          "href": "https://us.api.battle.net/data/d3/season/6?namespace=2-1-US"
+        }
+      ],
+      "current_season": 6,
+      "service_current_season": 6,
+      "service_season_state": "active",
+      "last_update_time": "Mon, 27 Jun 2016 04:06:00 UTC",
+      "generated_by": "US8-D3-PURPLE-JOB01 2.4.1 branches/2_4_1_Live-branches/2_4_1_Live"
+    },
+    "headers": {
+      "battlenet-namespace": "2-1-US",
+      "battlenet-schema": "season",
+      "battlenet-schema-revision": "2",
+      "battlenet-scope": "public",
+      "content-type": "application/json;charset=UTF-8",
+      "date": "Mon, 27 Jun 2016 04:06:27 GMT",
+      "last-modified": "Mon, 27 Jun 2016 04:06:00 GMT",
+      "retry-after": "600",
+      "server": "Apache",
+      "vary": "Accept-Encoding",
+      "x-frame-options": "SAMEORIGIN",
+      "x-mashery-responder": "prod-j-worker-us-east-1b-127.mashery.com",
+      "x-plan-qps-allotted": "100",
+      "x-plan-qps-current": "1",
+      "x-plan-quota-allotted": "36000",
+      "x-plan-quota-current": "11",
+      "x-plan-quota-reset": "Monday, June 27, 2016 5:00:00 AM GMT",
+      "content-length": "738",
+      "connection": "Close"
+    }
+  }
+]
