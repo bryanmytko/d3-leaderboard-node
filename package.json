@@ -18,6 +18,7 @@
   "homepage": "https://github.com/bryanmytko/d3-leaderboard-node#readme",
   "devDependencies": {
     "chai": "^3.5.0",
+    "nock-vcr-recorder-mocha": "^0.3.2",
     "sinon": "^1.17.4",
     "sinon-chai": "^2.8.0",
     "util": "^0.10.3"
