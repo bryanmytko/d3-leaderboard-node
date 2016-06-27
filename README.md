@@ -1,5 +1,7 @@
 # D3 Leaderboard API Wrapper
 
+![d3](http://i.imgur.com/CmObJtH.jpg)
+
 ## Requirements
 
 Get an Access Token from Blizzard [https://dev.battle.net/io-docs](https://dev.battle.net/io-docs)
