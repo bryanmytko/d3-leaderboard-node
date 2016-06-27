@@ -31,6 +31,7 @@ This method takes no arguments and a callback function.
 #### /season/:id/leaderboard/:leaderboard
 
 **id** (required) - The season you are looking to return
+
 **leaderboard** (required) - The leaderboard type (these can be found in the season/:id response)
 
     client.season_leaderboard(
@@ -55,6 +56,7 @@ This method takes no arguments and a callback function.
 #### /era/:id/leaderboard/:leaderboard
 
 **id** (required) - The era you are looking to return
+
 **leaderboard** (required) - The leaderboard type (these can be found in the era/:id response)
 
     client.era_leaderboard(
