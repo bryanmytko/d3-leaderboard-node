@@ -1,7 +1,7 @@
 {
-  "name": "d3-leaderboard",
+  "name": "diablo-3-leaderboards",
   "version": "1.0.0",
-  "description": "An API wrapper for the D3 leaderboard endpoints",
+  "description": "An API wrapper for the Diablo 3 leaderboard endpoints",
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
