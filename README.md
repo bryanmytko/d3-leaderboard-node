@@ -1,6 +1,8 @@
+![d3](http://i.imgur.com/CmObJtH.jpg)
+
 # D3 Leaderboard API Wrapper
 
-![d3](http://i.imgur.com/CmObJtH.jpg)
+[![npm version](https://badge.fury.io/js/diablo-3-leaderboards.svg)](https://badge.fury.io/js/diablo-3-leaderboards)
 
 ## Requirements
 
